@@ -8,7 +8,7 @@
 body {
     background: #F2F2F2;
     margin: 0;
-    font-family: 'Poppins Black';
+    font-family: 'Poppins';
 }
 
 .navbar {
@@ -27,7 +27,7 @@ body {
         
     }
     nav {
-        //display: none;
+        display: none;
     }
     
     .container {
@@ -232,8 +232,20 @@ nav {
             display: block;
             padding: .5em;
             font-size: 1.3em;
+            text-align: right;
+
+            &:hover {
+                font-weight: bold;
+            }
             
         }
     }
     
+}
+.mobile-menu-exit {
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+
+
 }

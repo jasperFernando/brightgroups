@@ -6,7 +6,7 @@
 body {
   background: #F2F2F2;
   margin: 0;
-  font-family: 'Poppins Black';
+  font-family: 'Poppins';
 }
 
 .navbar {
@@ -23,6 +23,10 @@ body {
 
 .navbar .logo span {
   color: var(--primary-color);
+}
+
+.navbar nav {
+  display: none;
 }
 
 .navbar .container {
@@ -210,5 +214,16 @@ nav li a {
   display: block;
   padding: .5em;
   font-size: 1.3em;
+  text-align: right;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: .5em;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
