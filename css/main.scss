@@ -90,7 +90,7 @@ section {
 
     .watch-video-cta {
         display: block;
-        margin: 1em 0 0 0;
+        margin: 1.5em 0 0 0;
         
         img {
             margin-right: .5em;
@@ -337,7 +337,7 @@ nav {
 
      .hero-img {
          width: 30%;
-         margin: 8em;
+         margin: 2em 5em;
     }
 
 
@@ -349,4 +349,89 @@ nav {
         margin-right: 1em;
     }
 
+    ul.features-list {
+        display: block;
+
+        li {
+            font-size: 1.4em;
+
+            &:before {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+    .features-section {
+        position: relative;
+
+    }
+
+    .features-section img {
+        display: block;
+        position: absolute;
+        width: 350px;
+        right: 0;
+        bottom: -1em;
+    }
+
+    .testimonial-section ul {
+        display: flex;
+
+        li{
+            margin: 0 1em;
+        }
+
+    }
+
+    .contact-section {
+        position: relative;
+
+        .container {
+            display: flex;
+        }
+    }
+
+    .contact-right {
+        right: 0;
+        top: 0;
+        position: absolute;
+        height: 100%;
+        width: 45%;
+
+        iframe {
+            height: 100%;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1450px) {
+    .features-section {
+
+     &:before {
+        content: '';
+        position: absolute;
+        width: 10%;
+        height: 20em;
+        background: var(--primary-color);
+        left: 0;
+        top: -4em;
+     } 
+
+       &:after {
+        content: '';
+        position: absolute;
+        width: 200px;
+        height: 20em;
+        background: url('../images/dots.svg') no-repeat;
+        left: 4.5em;
+        top: 2em;
+
+    
+       } 
+        
+        
+        
+        
+    }
 }
